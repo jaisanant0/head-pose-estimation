@@ -12,7 +12,7 @@ cap = cv2.VideoCapture(-1)
 
 # output
 fourcc = cv2.VideoWriter_fourcc('m', 'p', '4', 'v') #video codec
-out = cv2.VideoWriter(os.getcwd()+'/yes_cam_no_dist_upload.avi',fourcc,5,(int(cap.get(3)), int(cap.get(4))),True)
+out = cv2.VideoWriter(os.getcwd()+'/head_pose.avi',fourcc,5,(int(cap.get(3)), int(cap.get(4))),True)
 
 while True :
       ret, image = cap.read()
